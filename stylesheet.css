@@ -1,13 +1,3 @@
-
-body {
-  margin: 0;
-  font-family: "Hiragino Kaku Gothic ProN";
-}
-
-a {
-  text-decoration: none;
-}
-
 * {
   box-sizing: border-box;
 }
@@ -145,4 +135,3 @@ footer{
 .footer-up{
   border-top: 1px solid #eee;
 }
-
