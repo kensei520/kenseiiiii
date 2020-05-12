@@ -11,11 +11,12 @@ a {
   text-decoration: none;
 }
 .container{
-  width: 1170px;
+  max-width: 1170px;
+  width: 100%;
   margin:auto
 }
 .top-wrapper{
-  background-image: url(80545069-ヴィンテージ壁紙の木製素材背景.jpg);
+  background-image: url(https://github.com/kensei520/kenseiiiii/blob/master/80545069-%E3%83%B4%E3%82%A3%E3%83%B3%E3%83%86%E3%83%BC%E3%82%B8%E5%A3%81%E7%B4%99%E3%81%AE%E6%9C%A8%E8%A3%BD%E7%B4%A0%E6%9D%90%E8%83%8C%E6%99%AF.jpg?raw=true);
   text-align: center;
   background-size: cover;
   height: 500px;
@@ -87,12 +88,12 @@ header{
   opacity: 1;
 }
 .lesson-wrapper{
-  height: 200px;
+  
   text-align: center;
   background-color:#f7f7f7;
 }
 .heading h2{
-  padding-top:80px;
+  padding-top:30px;
   font-weight: normal;
 }
 .lesson{
@@ -131,23 +132,64 @@ font-size: 20px;
 }
 footer{
   height: 50px;
+  
 }
+
 .footer-up{
   border-top: 1px solid #eee;
 }
-
-@media all and (max-width: 1000px) {
-  .lesson {
-    width: 50%;
-    margin-bottom: 50px;
-  }
-
-  .lesson-wrapper {
-    height: 990px;
-  }
-
-  footer {
-    text-align: center;
-  }
+.clear{
+  clear:left;
 }
 
+
+@media (max-width: 1000px){
+  .lesson{
+    width:75%;
+    margin-bottom:50px;
+  }
+  .top-wrapper h1{
+    font-size: 32px;
+  }
+  .heading h2{
+    font-size: 20px;
+  } 
+}
+
+@media(max-width:670px){
+  .lesson{
+    width: 100%;
+  }
+  footer{
+    text-align:center;
+  }
+  .btn{
+    width: 100%;
+  }
+  .facebook{
+    margin-bottom: 10px;
+  }
+  .twitter{
+    margin-bottom: 10px;
+  }
+  .instagram{
+    margin-left: -20px;
+    width: 100%;
+  }
+  .top-wrapper{
+    padding-top: 130px;
+    height: 600px;
+  }
+.top-wrapper p {
+  text-align: left;
+  font-size:14px;
+}
+.top-wrapper h1{
+  text-align: left;
+font-size: 24px;
+}
+.btn-wrapper p{
+  text-align: center;
+}
+
+}
