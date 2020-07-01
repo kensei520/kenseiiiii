@@ -1,97 +1,415 @@
 <!DOCTYPE html>
-<html>
+<html dir="ltr" lang="en-US">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>株式会社竹川</title>
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
-</head>
-  <body>
-    <header>
-      <div class="container">
-        <div class="header-left">
-          <p>株式会社竹川</p>
-        </div>
-        <div class="header-right">
-          <a>ログイン</a>
-        </div>
-      </div>
-    </header>
-    <div class="top-wrapper">
-      <div class="container">
-        <h1>Never let your memories be greater than your dreams.</h1>
-        <p>株式会社竹川はwebメディアサービスを提供します。</p>
-        <p>どうぞよろしくお願い致します。</p>
-        <div class="btn-wrapper">
-          <div class="btn signup">新規登録はこちら</div>
-          <p>or</p>
-          <div class="btn facebook"><span class="fa fa-facebook"></span>Facebookで登録</div>
-          <div class="btn twitter"><span class="fa fa-twitter"></span>Twitterで登録</div>
-          <div class="btn instagram"><span class="fa fa-instagram"></span>instagramで登録</div>
-        </div>
-      </div>
-    </div>
-    <div class="lesson-wrapper">
-      <div class="container">
-        <div class="heading">
-          <h2>Job introduction</h2>
-        </div>
-        <div class="lessons">
-          <div class="lesson">
-            <div class="lesson-icon">
-              <img src="https://prog-8.com/images/html/advanced/html.png">
-              <p>ウェブサイト</p>
-            </div>
-            <div class="lesson-wrapper">
-              <p class="text">ご要望どうりのウェブサイトを作成致します。</p>
-            </div>
-          </div>
-          <div class="lesson">
-            <div class="lesson-icon">
-              <img src="https://prog-8.com/images/html/advanced/ruby.png">
-              <p>アプリ開発</p>
-            </div>
-            <div class="lesson-wrapper">
-              <p class="text">ゲーム、SNS、日常生活で使えるようなアプリなど開発致します。</p>
-            </div>
-          </div>
-          <div class="lesson">
-            <div class="lesson-icon">
-              <img src="https://prog-8.com/images/html/advanced/php.png">
-              <p>動画編集</p>
-            </div>
-            <div class="lesson-wrapper">
-              <p class="text">日常のものから旅の思い出、結婚式で使えるような動画を製作致します。また、Youtubeなど動画サイトにあげるような編集（BGM、テロップなど）を行います。</p>
-            </div>
-            <div class="clear">
 
+ 
+
+	<!-- Stylesheets
+	============================================= -->
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,400i,500,600,700&display=swap" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<link rel="stylesheet" href="css/dark.css" type="text/css" />
+
+	<link rel="stylesheet" href="css/font-icons.css" type="text/css" />
+	<link rel="stylesheet" href="one-page/css/et-line.css" type="text/css" />
+	<link rel="stylesheet" href="css/animate.css" type="text/css" />
+	<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+
+	<link rel="stylesheet" type="text/css" href="demos/photographer/css/menu.css" />
+
+	<link rel="stylesheet" href="css/custom.css" type="text/css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<!-- Photographer Specific Stylesheet -->
+	<link rel="stylesheet" href="demos/photographer/photographer.css" type="text/css" />
+	<!-- Photographer Specific Fonts -->
+	<link rel="stylesheet" href="demos/photographer/css/fonts.css" type="text/css" />
+	<!-- / -->
+
+	<!-- Photographer Specific Color -->
+	<link rel="stylesheet" href="css/colors.php?color=e41c34" type="text/css" />
+	<link rel="stylesheet" href="portfolio.css">
+
+	<!-- Document Title
+	============================================= -->
+	<title>けんけんportfolio</title>
+
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="author" content="SemiColonWeb" />
+</head>
+
+<body class="stretched" data-loader-html="<div><img src='demos/photographer/images/icons/loader.svg' alt='Loader'></div>">
+<div id="wrapper" class="clearfix">
+
+  <!-- Header
+  ============================================= -->
+  <header id="header" class="transparent-header no-sticky" data-sticky-shrink="false">
+    <div id="header-wrap">
+      <div class="container">
+        <div class="header-row">
+          <a href="demo-photography.html"></a>
+
+          <div>
+            <div class="primary-menu-trigger hamburger">
+              <i class="icon-line-menu"></i>
+              <i class="icon-line-cross"></i>
             </div>
+            <div class="global-menu">
+              <div class="global-menu__wrap">
+                <a class="global-menu__item" href="#home"></a>
+                <a class="global-menu__item" href="#about">About</a>
+                <a class="global-menu__item" href="#work">The work</a>
+                <a class="global-menu__item" href="#code">Code</a>
+                <a class="global-menu__item" href="#">Investiment</a>
+                <a class="global-menu__item" href="#blog">Blog</a>
+              </div>
+            </div>
+            <svg class="shape-overlays" viewBox="0 0 100 100" preserveAspectRatio="none">
+              <path class="shape-overlays__path" d=""></path>
+              <path class="shape-overlays__path" d=""></path>
+              <path class="shape-overlays__path" d=""></path>
+              <path class="shape-overlays__path" d=""></path>
+            </svg>
           </div>
         </div>
       </div>
     </div>
-    <div class="message-wrapper">
-      <div class="container">
-        <div class="heading">
-          <h2>高品質のサービスを提供致します！</h2>
-          <p>A problem is a chance for you to do your best.</p>
+    <div class="header-wrap-clone"></div>
+    
+  </header><!-- #header end -->
+
+  
+
+  <!-- Page Title
+  ============================================= -->
+  <section id="slider" class="slider-element min-vh-60 min-vh-md-100 include-header" style="background: 100% 0 no-repeat; background-size: 100% auto; background-image: url(img/10.jpg); ">
+    <div class="slider-inner">
+
+      <div class="vertical-middle">
+        <div class="container parallax py-5" data-0="opacity: 1; overflow: visible; margin-top:0px" data-top-bottom="opacity: 0; overflow: visible; margin-top:100px">
+
+
+          <div class="top container clearfix">
+            <h1 class="text-info">けんけんPortfolio</h1>
+            <p><span>ご要望通りのWEBページを制作致します</span></p>
+         </div>
         </div>
-        
-          <span class="btn message">申し込む</span>
-        
       </div>
     </div>
-    <footer>
-      <div class="container">
-        <div class="footer-up">
-          <p>株式会社竹川</p>
+  </section><!-- #page-title end -->
+
+  <!-- <section id="home" style="background-image: url(img/8.jpg); background-size: 100%; ">
+
+    <div class="top container clearfix">
+      <h1 class="text-white">けんけん</h1>
+      <span>ご要望通りのWEBページを制作致します</span>
+    <h1>aa</h1>
+    <h1>aa</h1>
+    <h1>aa</h1>
+    <h1>aa</h1>
+    <h1>aa</h1>
+    <h1>aa</h1>
+    <h1>aa</h1>
+   
+    
+   
+   
+    </div>
+
+  </section> -->
+  <!-- Content
+  ============================================= -->
+  <section id="content">
+    <div class="content-wrap">
+      <div class="container clearfix">
+
+        <div class="grid-filter-wrap">
+
+          <!-- Portfolio Filter
+          ============================================= -->
+        
         </div>
-        <div class="footer-down">
-          <p>Never let your memories be greater than your dreams.</p>
-        </div>
+
+        <!-- Portfolio Items
+        ============================================= -->
+        <div id="portfolio" class="portfolio row grid-container gutter-20 gutter-sm-50" data-layout="fitRows">
+
+          <!-- Portfolio Item: Start -->
+          <article class="portfolio-item col-12 pf-media pf-icons">
+            <!-- Grid Inner: Start -->
+            <div class="grid-inner row no-gutters">
+              <!-- profile -->
+              <div class="portfolio-image col-lg-8">
+                <div class="grid-inner">
+                  <a href="about" id="about">
+                    <img src="img/83E06A25-06F2-4BAD-AB31-C09DEC86F5AF.jpg" alt="Open Imagination">
+                  </a>
+                  <!-- Overlay: Start -->
+                  <div class="bg-overlay">
+                    <div class="bg-overlay-content dark" data-hover-animate="fadeIn">
+                      <a href="images/portfolio/full/1.jpg" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350" data-lightbox="image" title="Image"><i class="icon-line-plus"></i></a>
+                      <a href="portfolio-single.html" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"><i class="icon-line-ellipsis"></i></a>
+                    </div>
+                    <div class="bg-overlay-bg dark" data-hover-animate="fadeIn"></div>
+                  </div>
+                  <!-- Overlay: End -->
+                </div>
+              </div>
+              <!-- profile: End -->
+
+              <!-- profile2: Start -->
+              <div class="portfolio-desc col-lg-4 p-4 px-lg-5">
+                <h3><a href="portfolio-single.html" class="h1">About Me</a></h3>
+                <span><a href="#" class="text-danger">プログラマー＆ブロガー＆投資家</a></span>
+
+                <p class="mt-3 d-none d-sm-block">2011年:中学卒業<br>2013年高校卒業<br>2016年:大学卒業<br>2020年:新卒入社<br>2022年:株式会社TOP設立<br>2025年:東証一部上場</p>
+                
+                <a href="https://kenkenchan.com/" target="_blank" class="btn btn-secondary d-none d-sm-inline-block"><i class="icon-line-arrow-right"></i><span class="sr-only">Details</span></a>
+              </div>
+              <!-- profile: End -->
+            </div>
+            <!-- Grid Inner: End -->
+          </article>
+          <!-- Portfolio Item: End -->
+
+          <!-- The Work:start -->
+          <article class="portfolio-item col-12 pf-illustrations">
+            <div class="grid-inner row no-gutters">
+              <div class="portfolio-image col-lg-8 order-md-1">
+                <div class="grid-inner">
+                  <a href="portfolio-single.html">
+                    <img src="img/1.png" alt="Locked Steel Gate">
+                  </a>
+                  <div class="bg-overlay">
+                    <div class="bg-overlay-content dark" data-hover-animate="fadeIn" id="work">
+                      <a href="images/portfolio/full/2.jpg" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350" data-lightbox="image" title="Image"><i class="icon-line-plus"></i></a>
+                      <a href="portfolio-single.html" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"><i class="icon-line-ellipsis"></i></a>
+                    </div>
+                    <div class="bg-overlay-bg dark" data-hover-animate="fadeIn"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="portfolio-desc col-lg-4 p-4 px-lg-5 order-md-0 py-3">
+                <h3><a class="h1" href="portfolio-single.html">The Work</a></h3>
+                <span><a href="#">作品</a></span>
+                
+                <p class="mt-3 d-none d-sm-block">さまざまな様式のWebコーディングができます<br>LP制作は30000円から受け付けております 気軽にどうぞ</p>
+                
+                <a target="_blank" href="https://kenkenchan.com/" class="btn btn-secondary d-none d-sm-inline-block"><i class="icon-line-arrow-right"></i><span class="sr-only">Details</span></a>
+              </div>				
+            </div>
+          </article>
+
+          <!-- cord -->
+          <article class="portfolio-item col-12 pf-graphics pf-uielements">
+            <div class="grid-inner row no-gutters">
+              <div class="portfolio-image col-lg-8">
+                <div class="grid-inner" id="code">
+                  <a href="#">
+                    <img src="img/2.png" alt="Mac Sunglasses">
+                  </a>
+                  <div class="bg-overlay">
+                    <div class="bg-overlay-content dark" data-hover-animate="fadeIn">
+                      <a href="https://vimeo.com/89396394" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350" data-lightbox="iframe"><i class="icon-line-play"></i></a>
+                      <a href="portfolio-single.html" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"><i class="icon-line-ellipsis"></i></a>
+                    </div>
+                    <div class="bg-overlay-bg dark" data-hover-animate="fadeIn"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="portfolio-desc col-lg-4 p-4 px-lg-5">
+                <h3><a href="portfolio-single-video.html" class="h1">Code</a></h3>
+                <span><a href="#">実際のコード</a></span>
+
+                <p class="mt-3 d-none d-sm-block">1つのページを作るのに何百行のコードを書いています<br>ホームページもこのようなコードからできています</p>
+              
+                <a href="https://kenkenchan.com/" target="_blank" class="btn btn-secondary d-none d-sm-inline-block"><i class="icon-line-arrow-right"></i><span class="sr-only">Details</span></a>
+              </div>
+            </div>
+          </article>
+
+          <!-- investiment -->
+          <article class="portfolio-item col-12 pf-graphics pf-illustrations">
+            <div class="grid-inner row no-gutters">
+              <div class="portfolio-image col-lg-8 order-sm-1">
+                <div class="grid-inner">
+                  <div class="fslider" data-arrows="false">
+                    <div class="flexslider">
+                      <div class="slider-wrap">
+                        <div class="slide" id="investiment"><a href="portfolio-single-gallery.html"><img src="img/4.png" alt="Shake It"></a></div>
+                        <div class="slide"><a href="portfolio-single-gallery.html"><img src="img/3.jpg" alt="Shake It"></a></div>										
+                      </div>
+                    </div>
+                  </div>
+                  <div class="bg-overlay" data-lightbox="gallery">
+                    <div class="bg-overlay-content dark" data-hover-animate="fadeIn">
+                      <a href="images/portfolio/full/6.jpg" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350" data-lightbox="gallery-item"><i class="icon-line-stack-2"></i></a>
+                      <a href="images/portfolio/full/6-1.jpg" class="d-none" data-lightbox="gallery-item"></a>
+                      <a href="images/portfolio/full/6-2.jpg" class="d-none" data-lightbox="gallery-item"></a>
+                      <a href="images/portfolio/full/6-3.jpg" class="d-none" data-lightbox="gallery-item"></a>
+                      <a href="portfolio-single-gallery.html" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"><i class="icon-line-ellipsis"></i></a>
+                    </div>
+                    <div class="bg-overlay-bg dark" data-hover-animate="fadeIn"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="portfolio-desc col-lg-4 order-sm-0 p-4 px-lg-5">
+                <h3><a class="h1" target="_blank" href="portfolio-single-gallery.html">Investiment</a></h3>
+                <span><a href="#">投資</a></span>
+
+                <p class="mt-3 d-none d-sm-block">行っている投資は日経225先物取引、バイナリーオプションです。</p>	
+                <a href="portfolio-single.html" class="btn btn-secondary d-none d-sm-inline-block"><i class="icon-line-arrow-right"></i><span class="sr-only">Details</span></a>
+              </div>
+            </div>
+          </article>
+
+          <!-- blog -->
+          <article class="portfolio-item col-12 pf-uielements pf-icons">
+            <div class="grid-inner row no-gutters">
+              <div class="portfolio-image col-lg-8">
+                <div class="grid-inner" id="blog">
+                  <a href="portfolio-single-video.html">
+                    <img src="img/5.png" alt="Backpack Contents">
+                  </a>
+                  <div class="bg-overlay">
+                    <div class="bg-overlay-content dark" data-hover-animate="fadeIn">
+                      <a href="https://www.youtube.com/watch?v=kuceVNBTJio" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350" data-lightbox="iframe"><i class="icon-line-play"></i></a>
+                      <a href="portfolio-single.html" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"><i class="icon-line-ellipsis"></i></a>
+                    </div>
+                    <div class="bg-overlay-bg dark" data-hover-animate="fadeIn"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="portfolio-desc col-lg-4 p-4 px-lg-5">
+                <h3><a href="portfolio-single-video.html" class="h1">Blog</a></h3>
+                <span><a href="#">ブログ</a></span>
+
+                <p class="mt-3 d-none d-sm-block">ブログではアニメ、マンガ、日常のことなど色んなことを投稿しています。</p>
+              
+                <a target="_blank" href="https://kenkenchan.com/" class="btn btn-secondary d-none d-sm-inline-block"><i class="icon-line-arrow-right"></i><span class="sr-only">Details</span></a>
+              </div>
+            </div>
+          </article>
+
+        </div><!-- #portfolio end -->
+
       </div>
-    </footer>
-  </body>
+    </div>
+  </section><!-- #content end -->
+
+  <footer id="footer" class="dark">
+    <!-- Copyrights
+    ============================================= -->
+    <div id="copyrights">
+      <div class="container">
+
+        <div class="row justify-content-between col-mb-30">
+          <div class="col-12 col-lg-auto text-center text-lg-left order-last order-lg-first">
+            <img src="img/13.png" alt="Image" class="mb-3"><br>
+            Copyrights &copy; 2020 All Rights Reserved by kenken Inc.
+          </div>
+
+          <div class="col-12 col-lg-auto text-center text-lg-right">
+            <div class="copyrights-menu copyright-links">
+              <a href="#"></a>/<a href="#about">About</a>/<a href="#work">Work</a>/<a href="#code">Code</a>/<a href="#investiment">Investiment</a>/<a href="#blog">Blog</a>
+            </div>
+            <a href="https://twitter.com/kenkenblog_52" target="_blank" class="social-icon inline-block si-small si-borderless mb-0 si-facebook">
+              <i class="icon-facebook"></i>
+              <i class="icon-facebook"></i>
+            </a>
+
+            <a href="https://twitter.com/kenkenblog_52" target="_blank" class="social-icon inline-block si-small si-borderless mb-0 si-twitter">
+              <i class="icon-twitter"></i>
+              <i class="icon-twitter"></i>
+            </a>
+
+            <a href="https://twitter.com/kenkenblog_52" target="_blank" class="social-icon inline-block si-small si-borderless mb-0 si-gplus">
+              <i class="icon-gplus"></i>
+              <i class="icon-gplus"></i>
+            </a>
+
+            <a href="https://twitter.com/kenkenblog_52" target="_blank" class="social-icon inline-block si-small si-borderless mb-0 si-pinterest">
+              <i class="icon-pinterest"></i>
+              <i class="icon-pinterest"></i>
+            </a>
+
+            <a href="https://twitter.com/kenkenblog_52" target="_blank" class="social-icon inline-block si-small si-borderless mb-0 si-vimeo">
+              <i class="icon-vimeo"></i>
+              <i class="icon-vimeo"></i>
+            </a>
+
+            <a href="https://twitter.com/kenkenblog_52" target="_blank" class="social-icon inline-block si-small si-borderless mb-0 si-github">
+              <i class="icon-github"></i>
+              <i class="icon-github"></i>
+            </a>
+
+            <a href="https://twitter.com/kenkenblog_52" target="_blank" class="social-icon inline-block si-small si-borderless mb-0 si-yahoo">
+              <i class="icon-yahoo"></i>
+              <i class="icon-yahoo"></i>
+            </a>
+
+            <a href="https://twitter.com/kenkenblog_52" target="_blank" class="social-icon inline-block si-small si-borderless mb-0 si-linkedin">
+              <i class="icon-linkedin"></i>
+              <i class="icon-linkedin"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div><!-- #copyrights end -->
+  </footer>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+	<!-- Go To Top
+	============================================= -->
+	<div id="gotoTop" class="icon-angle-up bg-color"></div>
+
+	<!-- Dark Mode Switch
+  ============================================= -->
+	<!-- <a href="demo-photographer-dark.html" class="dark-mode" data-animate="fadeInRight">
+		<span>Dark Mode</span><i class="icon-line-toggle shadow"></i>
+	</a> -->
+
+	<!-- JavaScripts
+	============================================= -->
+	<script src="js/jquery.js"></script>
+	<script src="js/plugins.min.js"></script>
+
+	<!-- Photograph Hover Plugin
+	============================================= -->
+	<script src="demos/writer/js/hover3d.js" ></script>
+
+	<!-- Menu Open Plugin
+	============================================= -->
+	<script src="demos/photographer/js/menu-easing.js"></script>
+
+	<!-- Footer Scripts
+	============================================= -->
+	<script src="js/functions.js"></script>
+
+	<script>
+
+		// Hover Script
+		jQuery(".img-hover-wrap").hover3d({
+			selector: ".img-hover-card",
+			shine: false,
+		});
+
+  </script>
+
   
+ </body>
 </html>
