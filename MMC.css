@@ -1,0 +1,27 @@
+.swiper-slide-bg:hover{
+ opacity: 0.7;
+
+}
+.card:hover{
+  opacity: 0.9;
+  background-color: rgb(248, 177, 177);
+  cursor: pointer;
+}
+.site-map p:hover{
+  color: red;
+  cursor: pointer;
+}
+.navbar-toggler{
+  margin-left:auto;
+}
+footer p{
+  color: rgb(197, 193, 187);
+}
+.copy-light{
+  font-size: 10px;
+}
+@media screen and (min-width:990px){
+  .navbar-brand{
+    display:none;
+  }
+}
